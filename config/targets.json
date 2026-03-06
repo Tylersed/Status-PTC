@@ -1,0 +1,94 @@
+{
+  "domain": "peachtreetc.com",
+  "checks": [
+    {
+      "id": "ptc_site",
+      "name": "PTC Website",
+      "type": "http",
+      "url": "https://peachtreetownandcountry.com/",
+      "group": "PTC"
+    },
+    {
+      "id": "ptc_mx",
+      "name": "PTC Email MX (peachtreetc.com)",
+      "type": "dns_mx",
+      "host": "peachtreetc.com",
+      "group": "PTC"
+    },
+    {
+      "id": "ptc_spf",
+      "name": "PTC SPF (peachtreetc.com)",
+      "type": "dns_spf",
+      "host": "peachtreetc.com",
+      "group": "PTC"
+    },
+    {
+      "id": "ptc_dmarc",
+      "name": "PTC DMARC (_dmarc.peachtreetc.com)",
+      "type": "dns_dmarc",
+      "host": "peachtreetc.com",
+      "group": "PTC"
+    },
+    {
+      "id": "ms_outlook_web",
+      "name": "Outlook Web (OWA)",
+      "type": "http",
+      "url": "https://outlook.office.com/",
+      "group": "Microsoft 365"
+    },
+    {
+      "id": "ms_login",
+      "name": "Microsoft sign-in (login.microsoftonline.com)",
+      "type": "http",
+      "url": "https://login.microsoftonline.com/",
+      "group": "Microsoft 365"
+    },
+    {
+      "id": "ms_microsoft",
+      "name": "microsoft.com",
+      "type": "http",
+      "url": "https://www.microsoft.com/",
+      "group": "Microsoft 365"
+    },
+    {
+      "id": "google_drive",
+      "name": "Google Drive (drive.google.com)",
+      "type": "http",
+      "url": "https://drive.google.com/",
+      "group": "Google Workspace"
+    },
+    {
+      "id": "google_accounts",
+      "name": "Google sign-in (accounts.google.com)",
+      "type": "http",
+      "url": "https://accounts.google.com/",
+      "group": "Google Workspace"
+    },
+    {
+      "id": "google_google",
+      "name": "google.com",
+      "type": "http",
+      "url": "https://www.google.com/",
+      "group": "Google Workspace"
+    }
+  ],
+  "vendor": {
+    "googleWorkspace": {
+      "enabled": true,
+      "incidentsUrl": "https://www.google.com/appsstatus/dashboard/incidents.json",
+      "productsOfInterest": [
+        "Google Drive",
+        "Gmail",
+        "Google Docs",
+        "Google Calendar",
+        "Google Chat",
+        "Google Meet"
+      ]
+    }
+  },
+  "links": {
+    "ptcWebsite": "https://peachtreetownandcountry.com/",
+    "microsoftStatus": "https://status.cloud.microsoft/m365/referrer%3DserviceStatusRedirect",
+    "googleWorkspaceStatus": "https://www.google.com/appsstatus/dashboard/"
+  }
+}

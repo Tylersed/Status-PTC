@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PTC Status Watch</title>
+  <meta name="description" content="Public status dashboard for PTC + Microsoft 365 + Google Workspace." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <div>
+      <h1>PTC Status Watch</h1>
+      <p class="sub">
+        Quick-glance uptime checks for <strong>peachtreetownandcountry.com</strong>, <strong>peachtreetc.com</strong>, Microsoft 365, and Google Workspace.
+      </p>
+    </div>
+    <div class="headerRight">
+      <button id="refreshBtn" class="btn">Refresh</button>
+      <div class="muted" id="lastUpdated">Loading…</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="summary" class="grid"></section>
+
+    <section class="card">
+      <div class="cardHead">
+        <h2>Details</h2>
+        <div class="muted" id="uptimeNote"></div>
+      </div>
+      <div id="details"></div>
+    </section>
+
+    <section class="card">
+      <div class="cardHead">
+        <h2>Vendor status</h2>
+        <div class="muted">Official sources + what we can detect publicly.</div>
+      </div>
+      <div id="vendor"></div>
+    </section>
+
+    <footer class="footer muted">
+      Built with GitHub Actions + GitHub Pages. Data updates every 5 minutes (best effort).
+    </footer>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
