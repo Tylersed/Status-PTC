@@ -1,9 +1,0 @@
-{
-  "name": "ptc-status-watch",
-  "private": true,
-  "type": "module",
-  "description": "Public status page + synthetic monitoring for PTC + Microsoft 365 + Google Workspace (GitHub Pages + GitHub Actions).",
-  "scripts": {
-    "check": "node scripts/monitor.mjs"
-  }
-}
